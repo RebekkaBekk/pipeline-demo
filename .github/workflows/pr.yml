@@ -3,7 +3,7 @@ on:
   pull_request: #Only trigger this workflow on pull requests
     branches: [ "master" ]
     tags:
-      -tagtest
+      -tagtest2
 jobs:
   test:
     name: Test everything
