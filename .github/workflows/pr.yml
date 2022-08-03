@@ -2,6 +2,8 @@ name: Pull request
 on:
   pull_request: #Only trigger this workflow on pull requests
     branches: [ "master" ]
+    tags:
+      -tagtest
 jobs:
   test:
     name: Test everything
@@ -19,7 +21,7 @@ jobs:
         id: slack
         with:
           webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          text: "PR ready!:smile: Please review it :pray:"
+          text: "PR ready!:smile: GØYYYY :pray:"
           color: info # Slack already-supported color
 
 
